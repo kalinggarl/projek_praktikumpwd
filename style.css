@@ -1,3 +1,119 @@
-body{
-    background-color: aquamarine;
+body {
+    background-color: rgb(22, 57, 66) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: relative;
+}
+
+.navbar-brand {
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+.tengahgede{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.tengahgede-content h1 {
+    font-family: 'Libre Baskerville', serif;
+
+    font-weight: 700;
+    color: white;
+
+    font-size: 50px;
+
+    letter-spacing: 3px;
+
+}
+
+.tengahgede-content a {
+
+      font-family: "Namdhinggo", serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #000000;
+
+    font-size: 18px;
+
+    margin-top: 10px;
+
+}
+
+.btn-discover {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 30px;
+
+    background-color: #eaeaea;
+
+    color: #333;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+}
+
+.btn-discover:hover {
+
+    background-color: #d6d6d6;
+
+}
+
+.collection {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.collection .subtitle {
+
+    color: #ccc;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+}
+
+.collection h2 {
+
+    color: white;
+
+    font-size: 60px;
+
+    font-family: 'Libre Baskerville', serif;
+
 }
