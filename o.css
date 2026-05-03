@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(8.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.tengahgede {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.tengahgede::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.tengahgede-content {
+    position: relative;
+    z-index: 1;
+}
+
+.tengahgede-content h1 {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.btn-discover {
+    display: inline-block;
+    padding: 23px 32px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a1611;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    transition: background 0.25s;
+}
+
+.btn-discover:hover {
+    background: #fff;
+    color: #1a1611;
+}
+
+.collection {
+    background: transparent;
+    padding: 4rem 0 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.collection .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.45em;
+    color: rgba(160, 142, 112, 0.6);
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.collection h2 {
+    font-size: clamp(22px, 3vw, 36px);
+    font-weight: 400;
+    font-style: italic;
+    color: #f0e8d8;
+    margin-bottom: 2.5rem;
+}
+
+/* ===== CAROUSEL ===== */
+.parfum-carousel {
+    display: flex !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap !important;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.parfum-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.parfum-card {
+   
+
+  
+    flex: 0 0 230px !important;
+    scroll-snap-align: start;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-right: 0.5px solid rgb(255, 255, 255);
+    min-width: 0;
+    background: rgb(253, 251, 251);
+    border-radius: 20px;
+    margin: 0 8px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(123, 77, 39, 0.55);
+}
+
+
+.parfum-card:first-child {
+    border-left: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.parfum-card:hover {
+    background: rgba(249, 248, 248, 0.144);
+}
+
+.parfum-img {
+   width: 260px;
+    height: 320px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.parfum-name {
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    color: #c9b89a;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.parfum-sub {
+    font-size: 11px;
+    font-style: italic;
+    color: rgba(214, 169, 106, 0.998);
+    text-align: center;
+}
+
+.hint {
+    text-align: center;
+    padding: 0.8rem 0 2rem;
+    font-size: 8px;
+    letter-spacing: 0.4em;
+    color: rgb(231, 185, 114);
+    text-transform: uppercase;
+}
+
+
+ 
