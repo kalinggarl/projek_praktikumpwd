@@ -1,13 +1,7 @@
 <?php
-$host     = 'localhost';
-$dbname   = 'crut_parfume';
-$username = 'root';
-$password = '';
+$conn = mysqli_connect("localhost", "root", "", "crut_parfum");
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die('Koneksi gagal: ' . $e->getMessage());
+if (!$conn) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
