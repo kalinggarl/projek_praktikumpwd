@@ -36,7 +36,7 @@
 <section class="tengahgede">
     <div class="tengahgede-content">
         <h1>CRUT PARFUMES</h1>
-         <a href="#collection" class="btn-discover">Discover our Fragrances</a>
+         <a href="login.php" class="btn-discover">Discover our Fragrances</a>
     </div>
 </section>
 
