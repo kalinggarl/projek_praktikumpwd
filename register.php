@@ -17,19 +17,40 @@ if (isset($_POST['register'])) {
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="login.css"> <!-- pakai css yg sama -->
 </head>
 <body>
 
-<h2>Register</h2>
+<div class="auth-box">
 
-<form method="POST">
-    <input type="text" name="nama" placeholder="Nama" required><br><br>
-    <input type="email" name="email" placeholder="Email" required><br><br>
-    <input type="password" name="password" placeholder="Password" required><br><br>
-    <button type="submit" name="register">Daftar</button>
-</form>
+    <h2 class="logo">CRUT</h2>
+    <p class="tagline">Create Your Signature Scent</p>
 
-<p>Sudah punya akun? <a href="login.php">Login</a></p>
+    <p class="subtitle">Register</p>
+
+    <form method="POST">
+
+        <div class="input-group">
+            <input type="text" name="nama" placeholder="Nama" required>
+        </div>
+
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit" name="register" class="login-btn">Register</button>
+
+    </form>
+
+    <p class="register">
+        Sudah punya akun? <a href="login.php">Login</a>
+    </p>
+
+</div>
 
 </body>
 </html>

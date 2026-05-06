@@ -166,3 +166,44 @@ body {
     text-transform: uppercase;
 }
 
+.navbar {
+    background: rgba(0, 0, 0, 0.65); /* semi transparan tapi masih keliatan */
+
+    backdrop-filter: blur(10px);
+
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #ccc !important;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* Login button vibe luxury */
+.login-btn {
+    border: 1px solid #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+

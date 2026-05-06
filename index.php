@@ -11,16 +11,26 @@
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-  <div class="container-fluid justify-content-center">
-    <a class="navbar-brand mx-auto" href="index.html">Crut  </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container position-relative">
+
+    <!-- Brand Tengah -->
+    <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="#">
+      Crut
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Menu -->
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      
+      <!-- Menu kiri -->
+      <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#collection">Shop</a>
@@ -29,6 +39,14 @@
           <a class="nav-link" href="#">Contact Us</a>
         </li>
       </ul>
+
+      <!-- Login kanan -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link login-btn" href="login.php">Login</a>
+        </li>
+      </ul>
+
     </div>
   </div>
 </nav>

@@ -31,66 +31,48 @@ if (isset($_POST['login'])) {
 <head>
     <title>Login</title>
 
-    <!-- CSS langsung di sini biar ga ribet -->
-    <style>
-        body {
-            background-color: #111;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial;
-        }
+    <!-- Panggil CSS -->
+    <link rel="stylesheet" href="login.css">
 
-        .auth-box {
-            background-color: #1c1c1c;
-            padding: 30px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: center;
-            border: 1px solid #444;
-        }
-
-        .auth-box h2 {
-            color: white;
-        }
-
-        .auth-box input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-
-        .auth-box button {
-            width: 100%;
-            padding: 10px;
-            background: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        .auth-box p {
-            color: white;
-        }
-
-        .auth-box a {
-            color: #ccc;
-        }
-    </style>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="auth-box">
-    <h2>Login</h2>
+
+    <div class="logo">CRUT PARFUM</div>
+    <div class="tagline">FEEL THE ESSENCE</div>
+
+    <h2>Welcome Back</h2>
+    <div class="subtitle">Please login to continue</div>
 
     <form method="POST">
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <button type="submit" name="login">Login</button>
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox"> Remember</label>
+            <a href="#">Forgot?</a>
+        </div>
+
+        <button type="submit" name="login" class="login-btn">SIGN IN</button>
     </form>
 
-    <p>Belum punya akun? <a href="register.php">Register</a></p>
+    <div class="divider">OR</div>
+
+    <button class="google-btn">Continue with Google</button>
+
+    <div class="register">
+        Belum punya akun? <a href="register.php">Register</a>
+    </div>
+
 </div>
 
 </body>
